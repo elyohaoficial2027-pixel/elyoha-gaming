@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071329">
+<meta name="description" content="Elyoha Gaming: guías de emulación para PS1 y PSP, emuladores oficiales y juegos gratuitos autorizados.">
+<title>Elyoha Gaming | PS1 & PSP</title>
+<style>
+:root{--bg:#071329;--panel:#101f3b;--panel2:#15294b;--cyan:#49e4ff;--blue:#387bff;--pink:#ff3c9e;--text:#f4f8ff;--muted:#b6c5df;--line:#2a4168}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#123b70 0,transparent 35%),radial-gradient(ellipse at 0% 30%,#1a2352 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid #ffffff15}.brand{font-weight:950;letter-spacing:.5px;font-size:1.15rem}.brand span{color:var(--cyan)}nav .links{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}
+.hero{padding:72px 0 54px;display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}.eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.5rem,7vw,5.2rem);line-height:.98;letter-spacing:-2px;margin:12px 0 22px}h1 span{color:var(--cyan);text-shadow:0 0 30px #49e4ff44}.lead{color:var(--muted);font-size:1.12rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),#7ca6ff);color:#041022;font-weight:900;border:0}.btn.secondary{background:#15294b;color:var(--text);border:1px solid var(--line)}
+.hero-card{background:linear-gradient(145deg,#183c69,#0d1931);border:1px solid #49e4ff55;border-radius:24px;padding:25px;box-shadow:0 20px 70px #0006;transform:rotate(1deg)}.console{border:2px solid #4de8ff;border-radius:20px;padding:20px;background:linear-gradient(145deg,#13264b,#070e20);text-align:center}.console .screen{border-radius:12px;padding:30px 10px;background:linear-gradient(135deg,#102b64,#0b8ab1);font-size:1.55rem;font-weight:950;letter-spacing:3px;box-shadow:inset 0 0 25px #0005}.console small{display:block;color:#b9f8ff;margin-top:12px}
+section{padding:35px 0 48px}h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:0 0 10px;letter-spacing:-.5px}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:8px 0}.tag{display:inline-block;background:#49e4ff18;border:1px solid #49e4ff55;color:var(--cyan);font-size:.76rem;font-weight:800;padding:4px 9px;border-radius:99px}.card p{color:var(--muted);font-size:.94rem}.card .btn{margin-top:8px}.icon{font-size:1.7rem}
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{background:#0e1b34;border:1px solid var(--line);padding:20px;border-radius:16px}.step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--cyan);font-size:1.4rem;font-weight:950;margin-bottom:8px}
+.notice{border-left:4px solid #ffc857;background:#ffc85712;padding:16px 18px;border-radius:0 12px 12px 0;color:#f7e9c7}.catalog{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.game{display:flex;gap:16px;align-items:flex-start}.cover{flex:0 0 72px;height:88px;border-radius:12px;background:linear-gradient(145deg,#176b9b,#6c49bd);display:grid;place-items:center;font-size:1.8rem}.game h3{margin:0 0 5px}.game p{margin:0 0 8px;color:var(--muted);font-size:.92rem}
+footer{margin-top:30px;padding:28px 0;border-top:1px solid #ffffff18;color:var(--muted);font-size:.88rem}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-card{max-width:420px}.grid,.steps{grid-template-columns:1fr 1fr}.catalog{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid,.steps{grid-template-columns:1fr}h1{letter-spacing:-1px}.links{gap:12px!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="#"><span>◆</span> ELYOHA GAMING</a><div class="links"><a href="#emuladores">Emuladores</a><a href="#catalogo">Juegos legales</a><a href="#guias">Guías</a><a href="#legal">Uso responsable</a></div></nav>
+<header class="hero">
+<div><div class="eyebrow">Retro gaming · PS1 + PSP</div><h1>Vuelve a jugar.<br><span>Revive la leyenda.</span></h1><p class="lead">Tu punto de partida para jugar clásicos de PlayStation 1 y PSP con emuladores, aprender a configurarlos y descubrir demos y juegos creados por la comunidad que se pueden compartir legalmente.</p><div class="actions"><a class="btn" href="#emuladores">Explorar emuladores ↗</a><a class="btn secondary" href="#catalogo">Ver catálogo legal</a></div></div>
+<div class="hero-card"><div class="console"><div class="screen">ELYOHA<br>GAMING</div><small>PS1 • PSP • HOMEbrew</small><p style="margin:18px 0 0;color:#d4eaff">Juega tus clásicos favoritos</p></div></div>
+</header>
+<section id="emuladores"><h2>Emuladores oficiales</h2><p class="sub">Descárgalos desde la página del proyecto o la tienda oficial. Los juegos no vienen incluidos.</p>
+<div class="grid">
+<article class="card"><span class="tag">PSP</span><div class="icon">🎮</div><h3>PPSSPP</h3><p>Emulador de PSP para Android, iOS, Windows, macOS y Linux. Compatible con archivos de juegos propios y homebrew.</p><a class="btn" href="https://www.ppsspp.org/download/" target="_blank" rel="noopener">Sitio oficial ↗</a></article>
+<article class="card"><span class="tag">PS1</span><div class="icon">🕹️</div><h3>DuckStation</h3><p>Emulador de PlayStation 1. Revisa el repositorio oficial para las versiones y las instrucciones disponibles para tu dispositivo.</p><a class="btn" href="https://github.com/stenzek/duckstation" target="_blank" rel="noopener">Repositorio oficial ↗</a></article>
+<article class="card"><span class="tag">PS1</span><div class="icon">💿</div><h3>PSX.Dev</h3><p>Comunidad centrada en desarrollo y homebrew para PlayStation 1: proyectos, recursos y aprendizaje.</p><a class="btn" href="https://www.psx.dev/" target="_blank" rel="noopener">Visitar comunidad ↗</a></article>
+</div></section>
+<section id="catalogo"><h2>Catálogo de juegos y demos legales</h2><p class="sub">Empieza por demos gratuitas y homebrew. Comprueba siempre la licencia de cada juego antes de alojar tú mismo el archivo.</p>
+<div class="catalog">
+<article class="card game"><div class="cover">🚀</div><div><span class="tag">PSP · Homebrew</span><h3>Biblioteca homebrew de PPSSPP</h3><p>Juegos y aplicaciones creados por la comunidad; algunas entradas permiten redistribución gratuita. Lee las condiciones de cada título.</p><a href="https://www.ppsspp.org/gethomebrew/" target="_blank" rel="noopener">Explorar homebrew y demos ↗</a></div></article>
+<article class="card game"><div class="cover">🧪</div><div><span class="tag">PSP · Demos</span><h3>Demos gratuitas de PSP</h3><p>Guía del proyecto PPSSPP sobre demos publicadas gratuitamente por compañías y cómo ejecutarlas.</p><a href="https://www.ppsspp.org/docs/getting-started/how-to-get-demos-and-homebrew/" target="_blank" rel="noopener">Ver guía de demos ↗</a></div></article>
+<article class="card game"><div class="cover">🧩</div><div><span class="tag">PS1 · Homebrew</span><h3>PSX.Dev</h3><p>Comunidad para descubrir proyectos homebrew de PS1 y recursos de desarrollo. Confirma los permisos de descarga en cada proyecto.</p><a href="https://www.psx.dev/" target="_blank" rel="noopener">Visitar PSX.Dev ↗</a></div></article>
+<article class="card game"><div class="cover">📚</div><div><span class="tag">PSP · Comunidad</span><h3>PSP Homebrew Store</h3><p>Catálogo comunitario de homebrew para PSP. Revisa la información y la licencia del título antes de enlazarlo desde tu web.</p><a href="https://brew.psp.place/hb/index.html?lang=en" target="_blank" rel="noopener">Abrir catálogo ↗</a></div></article>
+</div>
+<div class="notice" style="margin-top:18px"><strong>Importante:</strong> no subas ISOs comerciales ni las enlaces para descargarlas sin permiso del titular. Tener el disco original no concede automáticamente permiso para redistribuir copias. Para juegos comerciales, consulta las opciones oficiales o usa copias creadas a partir de tus propios juegos conforme a la ley aplicable.</div>
+</section>
+<section id="guias"><h2>Empieza en tres pasos</h2><p class="sub">Una guía rápida para que tu comunidad no se pierda.</p><div class="steps"><div class="step"><h3>Instala el emulador</h3><p>Elige tu dispositivo y descárgalo desde el sitio oficial o una tienda de confianza.</p></div><div class="step"><h3>Prepara el juego</h3><p>Usa demos, homebrew autorizado o archivos obtenidos de tus propios juegos. No descargues archivos sospechosos.</p></div><div class="step"><h3>Configura y juega</h3><p>Abre el archivo desde el emulador, ajusta controles y gráficos y guarda tu progreso.</p></div></div></section>
+<section id="legal"><h2>Transparencia y derechos</h2><div class="card"><p>ELYOHA GAMING es una guía comunitaria independiente y no está afiliada a Sony Interactive Entertainment. PlayStation, PS1 y PSP son marcas de sus respectivos titulares. Los emuladores y enlaces externos pertenecen a sus proyectos originales.</p><p>Antes de redistribuir un juego, confirma que la licencia autoriza expresamente compartirlo. Si eres desarrollador y quieres que incluyamos tu juego, contáctanos con el enlace oficial y las condiciones de distribución.</p></div></section>
+<footer><div class="footerrow"><span>© <span id="year"></span> Elyoha Gaming · Hecho para la comunidad</span><span>Retro gaming con responsabilidad 🎮</span></div></footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
