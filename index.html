@@ -1,112 +1,291 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071329">
-<meta name="description" content="Elyoha Gaming: guías de emulación para PS1 y PSP, emuladores oficiales y juegos gratuitos autorizados.">
-<title>Elyoha Gaming | PS1 & PSP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050914">
+<title>ELYOHA GAMING | PS1 & PSP</title>
+<meta name="description" content="ELYOHA GAMING: revive la leyenda de PlayStation 1 y PSP con emuladores, demos, homebrew y guías.">
 <style>
-:root{--bg:#071329;--panel:#101f3b;--panel2:#15294b;--cyan:#49e4ff;--blue:#387bff;--pink:#ff3c9e;--text:#f4f8ff;--muted:#b6c5df;--line:#2a4168}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#123b70 0,transparent 35%),radial-gradient(ellipse at 0% 30%,#1a2352 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,92%);margin:auto}
-nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid #ffffff15}.brand{font-weight:950;letter-spacing:.5px;font-size:1.15rem}.brand span{color:var(--cyan)}nav .links{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}
-.hero{padding:72px 0 54px;display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}.eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
-h1{font-size:clamp(2.5rem,7vw,5.2rem);line-height:.98;letter-spacing:-2px;margin:12px 0 22px}h1 span{color:var(--cyan);text-shadow:0 0 30px #49e4ff44}.lead{color:var(--muted);font-size:1.12rem;max-width:650px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),#7ca6ff);color:#041022;font-weight:900;border:0}.btn.secondary{background:#15294b;color:var(--text);border:1px solid var(--line)}
-.hero-card{background:linear-gradient(145deg,#183c69,#0d1931);border:1px solid #49e4ff55;border-radius:24px;padding:25px;box-shadow:0 20px 70px #0006;transform:rotate(1deg)}.console{border:2px solid #4de8ff;border-radius:20px;padding:20px;background:linear-gradient(145deg,#13264b,#070e20);text-align:center}.console .screen{border-radius:12px;padding:30px 10px;background:linear-gradient(135deg,#102b64,#0b8ab1);font-size:1.55rem;font-weight:950;letter-spacing:3px;box-shadow:inset 0 0 25px #0005}.console small{display:block;color:#b9f8ff;margin-top:12px}
-section{padding:35px 0 48px}h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:0 0 10px;letter-spacing:-.5px}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:8px 0}.tag{display:inline-block;background:#49e4ff18;border:1px solid #49e4ff55;color:var(--cyan);font-size:.76rem;font-weight:800;padding:4px 9px;border-radius:99px}.card p{color:var(--muted);font-size:.94rem}.card .btn{margin-top:8px}.icon{font-size:1.7rem}
-.steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{background:#0e1b34;border:1px solid var(--line);padding:20px;border-radius:16px}.step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--cyan);font-size:1.4rem;font-weight:950;margin-bottom:8px}
-.notice{border-left:4px solid #ffc857;background:#ffc85712;padding:16px 18px;border-radius:0 12px 12px 0;color:#f7e9c7}.catalog{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.game{display:flex;gap:16px;align-items:flex-start}.cover{flex:0 0 72px;height:88px;border-radius:12px;background:linear-gradient(145deg,#176b9b,#6c49bd);display:grid;place-items:center;font-size:1.8rem}.game h3{margin:0 0 5px}.game p{margin:0 0 8px;color:var(--muted);font-size:.92rem}
-footer{margin-top:30px;padding:28px 0;border-top:1px solid #ffffff18;color:var(--muted);font-size:.88rem}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-card{max-width:420px}.grid,.steps{grid-template-columns:1fr 1fr}.catalog{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}}
-@media(max-width:520px){.grid,.steps{grid-template-columns:1fr}h1{letter-spacing:-1px}.links{gap:12px!important}}
+:root {
+  --bg:#050914;
+  --panel:#0c1629;
+  --blue:#168bff;
+  --cyan:#32e7ff;
+  --yellow:#ffe34d;
+  --text:#f4f7ff;
+  --muted:#a8b6cf;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:radial-gradient(ellipse at top,#102957 0,#050914 48%,#02040a 100%);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a { color:inherit; text-decoration:none; }
+header {
+  padding:22px 16px 12px;
+  text-align:center;
+}
+.logo-elyoha {
+  display:block;
+  width:180px;
+  max-width:65%;
+  height:auto;
+  margin:0 auto 12px;
+}
+.brand {
+  font-size:clamp(27px,6vw,44px);
+  font-weight:900;
+  letter-spacing:2px;
+  margin:0;
+  text-shadow:0 0 18px #168bff;
+}
+.brand span { color:var(--yellow); }
+.tagline { color:var(--muted); margin:5px 0 18px; }
+nav {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:12px;
+  border-top:1px solid #203658;
+  border-bottom:1px solid #203658;
+  background:#060b16d9;
+  position:sticky;
+  top:0;
+  z-index:5;
+}
+nav a {
+  padding:8px 13px;
+  border-radius:8px;
+  color:#dceaff;
+  font-size:14px;
+}
+nav a:hover { background:#15325b; color:var(--cyan); }
+main { max-width:1100px; margin:auto; padding:20px 16px 55px; }
+.hero {
+  text-align:center;
+  padding:52px 18px;
+  border:1px solid #174d89;
+  border-radius:20px;
+  background:linear-gradient(135deg,#10264b,#080d1a 65%,#25200b);
+  box-shadow:0 0 35px #087cff20;
+  overflow:hidden;
+}
+.kicker {
+  color:var(--yellow);
+  font-weight:bold;
+  letter-spacing:3px;
+  font-size:12px;
+}
+h1 {
+  font-size:clamp(32px,7vw,62px);
+  line-height:1.08;
+  margin:14px 0;
+}
+h1 span { color:var(--cyan); }
+.hero p { max-width:650px; margin:0 auto 24px; color:#c2d1e8; }
+.actions { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; }
+.btn {
+  display:inline-block;
+  padding:12px 19px;
+  border-radius:9px;
+  font-weight:bold;
+  background:var(--blue);
+  color:white;
+  border:1px solid #60b5ff;
+}
+.btn.yellow { background:var(--yellow); color:#101522; border-color:var(--yellow); }
+.btn.outline { background:transparent; border-color:#3c8dff; }
+section { margin-top:42px; scroll-margin-top:85px; }
+.section-title { font-size:clamp(24px,5vw,34px); margin:0 0 8px; }
+.section-title span { color:var(--yellow); }
+.intro { color:var(--muted); margin:0 0 20px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+.card {
+  background:linear-gradient(150deg,#101e36,#080e1c);
+  border:1px solid #203c60;
+  border-radius:15px;
+  padding:21px;
+  box-shadow:0 10px 25px #0003;
+}
+.card:hover { border-color:var(--cyan); transform:translateY(-2px); }
+.card { transition:transform .2s,border-color .2s; }
+.console {
+  min-height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  margin-bottom:15px;
+  font-size:52px;
+  font-weight:900;
+  letter-spacing:2px;
+  background:radial-gradient(circle,#174d83,#081020 70%);
+  color:var(--cyan);
+  text-shadow:0 0 20px #168bff;
+}
+.console.psp {
+  color:var(--yellow);
+  background:radial-gradient(circle,#5c4a17,#10101a 70%);
+  text-shadow:0 0 20px #ffe34d66;
+}
+.card h3 { margin:5px 0 8px; font-size:21px; }
+.card p { color:var(--muted); font-size:14px; }
+.card .btn { margin-top:8px; font-size:14px; }
+.notice {
+  padding:17px;
+  border-left:4px solid var(--yellow);
+  background:#191a20;
+  border-radius:8px;
+  color:#d9e2f3;
+}
+.steps { counter-reset:step; }
+.step {
+  padding:16px;
+  border-radius:10px;
+  background:#0b1425;
+  border:1px solid #1b3150;
+  margin:10px 0;
+}
+.step strong { color:var(--cyan); }
+footer {
+  border-top:1px solid #203658;
+  text-align:center;
+  padding:25px 15px;
+  color:var(--muted);
+  background:#03060d;
+  font-size:13px;
+}
+footer strong { color:var(--yellow); }
+@media(max-width:480px) {
+  main { padding-left:12px; padding-right:12px; }
+  .hero { padding:38px 14px; }
+  nav { gap:2px; }
+  nav a { padding:8px; font-size:12px; }
+}
 </style>
 </head>
 <body>
-  <header class="logo-principal">
-  <img src="elyoha-gaming.png"
-       alt="ELYOHA GAMING"
-       class="logo-elyoha">
-  </header>
-  <style>
-.logo-principal {
-  text-align: center;
-  padding: 20px 10px;
-}
-.logo-elyoha {
-  width: 180px;
-  max-width: 70%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-  </style>
-<div class="wrap">
-<nav><a class="brand" href="#"><span>◆</span> ELYOHA GAMING</a><div class="links"><a href="#emuladores">Emuladores</a><a href="#catalogo">Juegos legales</a><a href="#guias">Guías</a><a href="#legal">Uso responsable</a></div></nav>
-<header class="hero">
-<div><div class="eyebrow">Retro gaming · PS1 + PSP</div><h1>Vuelve a jugar.<br><span>Revive la leyenda.</span></h1><p class="lead">Tu punto de partida para jugar clásicos de PlayStation 1 y PSP con emuladores, aprender a configurarlos y descubrir demos y juegos creados por la comunidad que se pueden compartir legalmente.</p><div class="actions"><a class="btn" href="#emuladores">Explorar emuladores ↗</a><a class="btn secondary" href="#catalogo">Ver catálogo legal</a></div></div>
-<div class="hero-card"><div class="console"><div class="screen">ELYOHA<br>GAMING</div><small>PS1 • PSP • HOMEbrew</small><p style="margin:18px 0 0;color:#d4eaff">Juega tus clásicos favoritos</p></div></div>
+
+<header>
+  <img src="elyoha-gaming.png" alt="ELYOHA GAMING" class="logo-elyoha"
+       onerror="this.style.display='none'">
+  <p class="brand">ELYOHA <span>GAMING</span></p>
+  <p class="tagline">La nostalgia nunca muere · PlayStation 1 & PSP</p>
 </header>
-<section id="emuladores">
-  <h2>Emuladores para PS1 y PSP</h2>
-  <p class="sub">
-    Elige tu emulador y visita su página oficial
-    para instalarlo en tu dispositivo.
-  </p>
 
-  <div class="grid">
+<nav aria-label="Navegación principal">
+  <a href="#inicio">Inicio</a>
+  <a href="#consolas">PS1 & PSP</a>
+  <a href="#emuladores">Emuladores</a>
+  <a href="#catalogo">Catálogo</a>
+  <a href="#guias">Guías</a>
+</nav>
 
-    <article class="card">
-      <span class="tag">PLAYSTATION 1</span>
-      <div class="icon">🕹️</div>
-      <h3>ePSXe para Android</h3>
-      <p>
-        Juega clásicos de la primera PlayStation
-        en tu teléfono o tableta Android.
-      </p>
-      <a class="btn"
-         href="https://play.google.com/store/apps/details?id=com.epsxe.ePSXe"
-         target="_blank"
-         rel="noopener noreferrer">
-        Ver en Google Play ↗
-      </a>
-    </article>
+<main>
+  <section class="hero" id="inicio">
+    <p class="kicker">TU PORTAL RETRO GAMING</p>
+    <h1>Vuelve a jugar.<br><span>Revive la leyenda.</span></h1>
+    <p>Descubre el mundo de PlayStation 1 y PSP. Encuentra emuladores oficiales, demos, proyectos homebrew y guías para empezar.</p>
+    <div class="actions">
+      <a class="btn yellow" href="#consolas">Explorar consolas</a>
+      <a class="btn outline" href="#emuladores">Ver emuladores</a>
+    </div>
+  </section>
 
-    <article class="card">
-      <span class="tag">PLAYSTATION PORTABLE</span>
-      <div class="icon">🎮</div>
-      <h3>PPSSPP</h3>
-      <p>
-        Disfruta juegos de PSP en Android y otros
-        dispositivos compatibles. También permite
-        ejecutar juegos y aplicaciones caseras.
-      </p>
-      <a class="btn"
-         href="https://www.ppsspp.org/download/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Descargar PPSSPP ↗
-      </a>
-    </article>
+  <section id="consolas">
+    <h2 class="section-title">Elige tu <span>generación</span></h2>
+    <p class="intro">Dos consolas legendarias. Miles de recuerdos.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="console">PS1</div>
+        <h3>PlayStation 1</h3>
+        <p>Vuelve a la primera generación de PlayStation y descubre proyectos de la comunidad, demos y homebrew.</p>
+        <a class="btn" href="#emuladores">Explorar PS1</a>
+      </article>
+      <article class="card">
+        <div class="console psp">PSP</div>
+        <h3>PlayStation Portable</h3>
+        <p>Explora la portátil clásica con emulación, aplicaciones de la comunidad y demos disponibles legalmente.</p>
+        <a class="btn yellow" href="https://www.ppsspp.org/gethomebrew/" target="_blank" rel="noopener noreferrer">Ver homebrew PSP</a>
+      </article>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <section id="emuladores">
+    <h2 class="section-title">Emuladores <span>recomendados</span></h2>
+    <p class="intro">Descárgalos desde sus fuentes oficiales y revisa la compatibilidad de tu dispositivo.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>🎮 ePSXe para Android</h3>
+        <p>Emulador de PlayStation 1 para Android. Consulta la ficha oficial en Google Play.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.epsxe.ePSXe" target="_blank" rel="noopener noreferrer">Abrir Google Play</a>
+      </article>
+      <article class="card">
+        <h3>🕹️ PPSSPP</h3>
+        <p>Emulador de PSP disponible para varias plataformas, incluido Android y PC.</p>
+        <a class="btn yellow" href="https://www.ppsspp.org/download/" target="_blank" rel="noopener noreferrer">Descargar PPSSPP</a>
+      </article>
+    </div>
+  </section>
 
+  <section id="catalogo">
+    <h2 class="section-title">Catálogo <span>legal</span></h2>
+    <p class="intro">Explora demos, aplicaciones y creaciones que sus autores ofrecen para compartir.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>🚀 Homebrew para PSP</h3>
+        <p>Aplicaciones y proyectos creados por la comunidad para PSP.</p>
+        <a class="btn" href="https://www.ppsspp.org/gethomebrew/" target="_blank" rel="noopener noreferrer">Explorar homebrew</a>
+      </article>
+      <article class="card">
+        <h3>✨ Demos y proyectos</h3>
+        <p>Aprende dónde encontrar demos y homebrew compatibles con PPSSPP.</p>
+        <a class="btn yellow" href="https://www.ppsspp.org/docs/getting-started/how-to-get-demos-and-homebrew/" target="_blank" rel="noopener noreferrer">Ver guía oficial</a>
+      </article>
+      <article class="card">
+        <h3>💻 PSX.Dev</h3>
+        <p>Comunidad y recursos de desarrollo relacionados con PlayStation.</p>
+        <a class="btn" href="https://www.psx.dev/" target="_blank" rel="noopener noreferrer">Visitar PSX.Dev</a>
+      </article>
+      <article class="card">
+        <h3>🧪 PSP Homebrew Store</h3>
+        <p>Consulta aplicaciones y proyectos homebrew para la consola portátil.</p>
+        <a class="btn yellow" href="https://brew.psp.place/hb/index.html?lang=en" target="_blank" rel="noopener noreferrer">Abrir catálogo</a>
+      </article>
+    </div>
+    <p class="notice">Importante: descarga juegos únicamente cuando tengas derecho legal a hacerlo. ELYOHA GAMING no distribuye copias no autorizadas de juegos comerciales ni archivos BIOS protegidos.</p>
+  </section>
 
+  <section id="guias">
+    <h2 class="section-title">Guías para <span>comenzar</span></h2>
+    <p class="intro">Sigue estos pasos básicos para empezar a jugar.</p>
+    <div class="steps">
+      <div class="step"><strong>01 · Elige tu emulador.</strong><br>Usa la página oficial o una tienda reconocida para descargarlo.</div>
+      <div class="step"><strong>02 · Prepara tus archivos.</strong><br>Utiliza demos gratuitas, homebrew o copias de juegos que estés legalmente autorizado a usar.</div>
+      <div class="step"><strong>03 · Configura los controles.</strong><br>Ajusta los botones, el sonido y los gráficos desde las opciones del emulador.</div>
+      <div class="step"><strong>04 · Guarda tu progreso.</strong><br>Si el emulador lo permite, configura partidas guardadas y copias de seguridad.</div>
+    </div>
+  </section>
 
-<section id="catalogo"><h2>Catálogo de juegos y demos legales</h2><p class="sub">Empieza por demos gratuitas y homebrew. Comprueba siempre la licencia de cada juego antes de alojar tú mismo el archivo.</p>
-<div class="catalog">
-<article class="card game"><div class="cover">🚀</div><div><span class="tag">PSP · Homebrew</span><h3>Biblioteca homebrew de PPSSPP</h3><p>Juegos y aplicaciones creados por la comunidad; algunas entradas permiten redistribución gratuita. Lee las condiciones de cada título.</p><a href="https://www.ppsspp.org/gethomebrew/" target="_blank" rel="noopener">Explorar homebrew y demos ↗</a></div></article>
-<article class="card game"><div class="cover">🧪</div><div><span class="tag">PSP · Demos</span><h3>Demos gratuitas de PSP</h3><p>Guía del proyecto PPSSPP sobre demos publicadas gratuitamente por compañías y cómo ejecutarlas.</p><a href="https://www.ppsspp.org/docs/getting-started/how-to-get-demos-and-homebrew/" target="_blank" rel="noopener">Ver guía de demos ↗</a></div></article>
-<article class="card game"><div class="cover">🧩</div><div><span class="tag">PS1 · Homebrew</span><h3>PSX.Dev</h3><p>Comunidad para descubrir proyectos homebrew de PS1 y recursos de desarrollo. Confirma los permisos de descarga en cada proyecto.</p><a href="https://www.psx.dev/" target="_blank" rel="noopener">Visitar PSX.Dev ↗</a></div></article>
-<article class="card game"><div class="cover">📚</div><div><span class="tag">PSP · Comunidad</span><h3>PSP Homebrew Store</h3><p>Catálogo comunitario de homebrew para PSP. Revisa la información y la licencia del título antes de enlazarlo desde tu web.</p><a href="https://brew.psp.place/hb/index.html?lang=en" target="_blank" rel="noopener">Abrir catálogo ↗</a></div></article>
-</div>
-<div class="notice" style="margin-top:18px"><strong>Importante:</strong> no subas ISOs comerciales ni las enlaces para descargarlas sin permiso del titular. Tener el disco original no concede automáticamente permiso para redistribuir copias. Para juegos comerciales, consulta las opciones oficiales o usa copias creadas a partir de tus propios juegos conforme a la ley aplicable.</div>
-</section>
-<section id="guias"><h2>Empieza en tres pasos</h2><p class="sub">Una guía rápida para que tu comunidad no se pierda.</p><div class="steps"><div class="step"><h3>Instala el emulador</h3><p>Elige tu dispositivo y descárgalo desde el sitio oficial o una tienda de confianza.</p></div><div class="step"><h3>Prepara el juego</h3><p>Usa demos, homebrew autorizado o archivos obtenidos de tus propios juegos. No descargues archivos sospechosos.</p></div><div class="step"><h3>Configura y juega</h3><p>Abre el archivo desde el emulador, ajusta controles y gráficos y guarda tu progreso.</p></div></div></section>
-<section id="legal"><h2>Transparencia y derechos</h2><div class="card"><p>ELYOHA GAMING es una guía comunitaria independiente y no está afiliada a Sony Interactive Entertainment. PlayStation, PS1 y PSP son marcas de sus respectivos titulares. Los emuladores y enlaces externos pertenecen a sus proyectos originales.</p><p>Antes de redistribuir un juego, confirma que la licencia autoriza expresamente compartirlo. Si eres desarrollador y quieres que incluyamos tu juego, contáctanos con el enlace oficial y las condiciones de distribución.</p></div></section>
-<footer><div class="footerrow"><span>© <span id="year"></span> Elyoha Gaming · Hecho para la comunidad</span><span>Retro gaming con responsabilidad 🎮</span></div></footer>
-</div>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+  <section id="legal">
+    <h2 class="section-title">Juego limpio, <span>siempre</span></h2>
+    <p class="notice">Este sitio es un proyecto informativo independiente. No está afiliado a Sony ni a PlayStation. Las marcas y nombres pertenecen a sus respectivos propietarios. Respeta los derechos de autor y las leyes aplicables en tu país.</p>
+  </section>
+</main>
+
+<footer>
+  <p><strong>ELYOHA GAMING</strong> · PS1 & PSP</p>
+  <p>La nostalgia vive aquí. © <span id="year"></span></p>
+</footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
