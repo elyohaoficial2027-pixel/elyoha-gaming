@@ -187,6 +187,39 @@ footer strong { color:var(--yellow); }
   <a href="#guias">Guías</a>
 </nav>
 
+<section id="biblioteca" style="padding:24px 16px; max-width:1100px; margin:auto;">
+  <h2 class="section-title">🎮 Biblioteca de juegos</h2>
+  <p class="intro">Encuentra juegos por plataforma y busca en el catálogo.</p>
+
+  <input id="buscar-juego" type="search"
+    placeholder="🔎 Buscar un juego..."
+    aria-label="Buscar un juego"
+    style="width:100%; padding:13px; border-radius:10px; margin:12px 0 20px;">
+
+  <div id="lista-juegos" class="grid">
+    <article class="card juego">
+      <div class="console">PS1</div>
+      <h3>Juegos de PlayStation 1</h3>
+      <p>Próximamente: juegos gratuitos o autorizados para distribuir.</p>
+    </article>
+
+    <article class="card juego">
+      <div class="console psp">PSP</div>
+      <h3>Juegos de PSP</h3>
+      <p>Próximamente: juegos gratuitos o autorizados para distribuir.</p>
+    </article>
+  </div>
+</section>
+
+<script>
+  document.getElementById("buscar-juego").addEventListener("input", function() {
+    const texto = this.value.toLowerCase();
+    document.querySelectorAll("#lista-juegos .juego").forEach(function(item) {
+      item.style.display = item.textContent.toLowerCase().includes(texto) ? "" : "none";
+    });
+  });
+</script>
+
 <main>
   <section class="hero" id="inicio">
     <p class="kicker">TU PORTAL RETRO GAMING</p>
